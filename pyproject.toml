@@ -9,17 +9,15 @@ keywords = ["tensorflow", "onnx", "tensorrt", "model-conversion"]
 repository = "https://github.com/Geridev/quantizedensenet"
 
 [tool.poetry.dependencies]
-python = ">=3.10,<4.0"
-cuda-bindings = "*"
-cuda-pathfinder = "*"
-numpy = "*"
+python = ">=3.8,<4.0"
+tensorflow = "*"
+tf2onnx = "*"
 onnx = "*"
 onnxconverter-common = "*"
-onnxruntime-gpu = "*"
+tensorrt-cu12 = "*"
+numpy = "*"
 pillow = "*"
-pycuda = "*"
-tensorrt-cu12 = "10.14.1.48.post1"
-tf2onnx = "*"
+cuda-python = "*"
 nvidia-cudnn-cu12 = "9.3.0.75"
 
 [tool.poetry.group.test.dependencies]
