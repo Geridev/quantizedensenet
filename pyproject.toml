@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "quantizedensenet"
-version = "0.0.4"
+version = "0.0.5"
 description = "Package for converting TensorFlow DenseNet121 and DenseNet201 models to ONNX and TensorRT formats."
 authors = ["Gergő Lovas <lovasgergo44@gmail.com>"]
 readme = "README.md"
@@ -10,15 +10,23 @@ repository = "https://github.com/Geridev/quantizedensenet"
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
-tensorflow = "*"
-tf2onnx = "*"
-onnx = "*"
-onnxconverter-common = "*"
-tensorrt = "*"
-numpy = "*"
-pillow = "*"
-cuda-python = "*"
-protobuf = "~3.20.3"
+cuda-bindings = "12.9.2"
+cuda-pathfinder = "1.2.3"
+numpy = "1.26.4"
+onnx = "1.17.0"
+onnxconverter-common = "1.16.0"
+onnxruntime-gpu = "1.23.2"
+pandas = "2.3.3"
+pillow = "12.0.0"
+pycuda = "2025.1.2"
+scikit-learn = "1.2.2"
+tensorflow = "2.18.0"
+tensorrt-cu12 = "10.14.1.48.post1"
+tf2onnx = "1.16.1"
+torch = "*"
+torchvision = "*"
+tqdm = "4.67.1"
+nvidia-cudnn-cu12 = "9.3.0.75"
 
 [tool.poetry.group.test.dependencies]
 pytest = [
@@ -32,7 +40,7 @@ build-backend = "poetry.core.masonry.api"
 
 [project]
 name = "quantizedensenet"
-version = "0.0.4"
+version = "0.0.5"
 description = "Package for converting TensorFlow DenseNet121 and DenseNet201 models to ONNX and TensorRT formats."
 authors = [
     { name="Gergő Lovas", email="lovasgergo44@gmail.com" }
