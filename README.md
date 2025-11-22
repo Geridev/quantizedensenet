@@ -1,6 +1,6 @@
 # quantizedensenet
 
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.18%2B-orange.svg)](https://tensorflow.org/)
 [![TensorRT](https://img.shields.io/badge/TensorRT-10.14%2B-76B900.svg)](https://developer.nvidia.com/tensorrt)
 
@@ -34,7 +34,7 @@ A Python package for seamlessly converting DenseNet TensorFlow models to ONNX an
 
 Before installing the package, ensure you have the following:
 
-- **Python 3.8 or higher** - Check with `python --version`
+- **Python 3.11 or higher** - Check with `python --version`
 - **pip** (Python package manager) - Check with `pip --version`
 - **NVIDIA GPU** with CUDA support
 - **CUDA Toolkit 12.x** - (Required by `tensorrt_cu12` and `cuda_bindings==12.9.2`)
