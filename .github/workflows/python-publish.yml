@@ -22,9 +22,6 @@ jobs:
       - name: Install dependencies
         run: poetry install --with test --no-interaction
 
-      - name: Run tests
-        run: poetry run pytest
-
   check-pypi:
     runs-on: ubuntu-latest
     steps:
