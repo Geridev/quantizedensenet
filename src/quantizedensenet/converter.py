@@ -7,8 +7,8 @@ import tensorrt as trt
 from pathlib import Path
 from typing import Union, Optional, Dict, Tuple, Literal, List
 import logging
-from utils import make_model
-from onnx_to_trt import build_trt_engine
+from .utils import make_model
+from .onnx_to_trt import build_trt_engine
 import os
 import tempfile
 
