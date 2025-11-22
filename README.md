@@ -52,7 +52,7 @@ pip install -r requirements.txt
 ```
 
 ## Quick Start
-1. Install the wheel and dependencies, then import the converter: `from converter import Converter`
+1. Install the wheel and dependencies, then import the converter: `from quantizedensenet import Converter`
 
 2. Create a converter instance: `converter = Converter()`
 
@@ -85,7 +85,7 @@ The `Converter` class provides three utilities: convert TensorFlow models to ONN
 * Supports exporting to FP32 or FP16 ONNX graph.
 
 ```python
-from converter import Converter
+from quantizedensenet import Converter
 
 converter = Converter()
 onnx_model = converter.tf_to_onnx(
@@ -118,7 +118,7 @@ onnx_model = converter.tf_to_onnx(
   * `max_batch`: The maximum number of images a batch could ever contain.
 
 ```python
-from converter import Converter
+from quantizedensenet import Converter
 
 converter = Converter()
 engine = converter.onnx_to_trt(
@@ -146,7 +146,7 @@ engine = converter.onnx_to_trt(
 * If `calibration_cache` is provided but does not exist, it will be created using the `calibration_images`.
 
 ```python
-from converter import Converter
+from quantizedensenet import Converter
 
 converter = Converter()
 model = converter.onnx_to_trt(
@@ -170,7 +170,7 @@ Runs the end-to-end pipeline in one call. Exports a TensorFlow model to ONNX, th
 * When using INT8, provide `calibration_images` or a `calibration_cache`.
 
 ```python
-from converter import Converter
+from quantizedensenet import Converter
 
 converter = Converter()
 model = converter.tf_to_trt(
