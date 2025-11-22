@@ -1,0 +1,9 @@
+cuda_bindings==12.9.2
+cuda_pathfinder==1.2.3
+numpy==1.26.4
+onnx==1.17.0
+onnxconverter_common==1.16.0
+Pillow==12.0.0
+tensorflow==2.18.0
+tensorrt_cu12==10.14.1.48.post1
+tf2onnx==1.16.1
