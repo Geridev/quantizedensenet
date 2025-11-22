@@ -9,7 +9,7 @@ keywords = ["tensorflow", "onnx", "tensorrt", "model-conversion"]
 repository = "https://github.com/Geridev/quantizedensenet"
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"
+python = ">=3.11,<4.0"
 cuda_bindings = "12.9.2"
 cuda_pathfinder = "1.2.3"
 numpy = "1.26.4"
